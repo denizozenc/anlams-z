@@ -17,7 +17,7 @@ exports.run = (client, message, params) => {
     .setAuthor(message.guild.name, message.guild.iconURL)
     .addField('Sunucu Adı:', message.guild.name) .addField('Sunucu ID:', message.guild.id)
     .addField('Sunucu Bölgesi:', message.guild.region) .addField('Üye sayısı:', message.guild.memberCount)
-    .addField('Sahibi:', message.guild.owner + ' (' + message.guild.ownerID + ')') .addField('Kanal sayısı:', message.guild.channels.size)
+    .addField('Sahibi:', message.guild.owner) .addField('Kanal sayısı:', message.guild.channels.size)
     .addField('Oluşturulma tarihi:', message.guild.createdAt)
     return message.channel.sendEmbed(sunucubilgi);
     }
